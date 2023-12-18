@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    padding: 0px;
+    margin: 0px;
+
+    
+    .button {
+        background-color: #FFFAF0;
+        color: #483D8B;
+        border: 1px solid #483D8B; // tambahkan border agar tombol terlihat
+        border-radius: 5px; // agar tombol memiliki sudut yang lebih halus
+        font-size: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+        outline: none; // hilangkan focus border
+        transition: all 0.3s ease; // animasi smooth saat hover dan perubahan
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); // bayangan di tombol
+    }
+}
