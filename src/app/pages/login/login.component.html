@@ -1,0 +1,12 @@
+<div class="login-container">
+    <h2>Digital Innovation Academy Batch 4</h2>
+    <form #loginForm="ngForm" (ngSubmit)="handleLogin()">
+        <label>Username:</label>
+        <input type="text" [(ngModel)]="admin.username" name="username" required>
+
+        <label>Password:</label>
+        <input type="text" [(ngModel)]="admin.password" name="password" required>
+
+        <button>Login</button>
+    </form>
+</div>

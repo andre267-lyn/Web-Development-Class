@@ -1,0 +1,30 @@
+.page-title {
+    text-align: center;
+    width: auto;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #483D8B;
+}
+
+div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+button {
+    width: 20%;
+    background-color: #483D8B;
+    color: #fff;
+    border: none;;
+    height: 40px;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+
+    &:hover {
+        background-color: #114161;
+    }
+}
+
+.spacer {
+    height: 100px;
+}
