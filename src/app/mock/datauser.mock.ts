@@ -2,9 +2,9 @@ import { UserModel } from "../model/usermodel";
 
 export let dataUser: UserModel[] = [
     {
-        name: 'Robby',
-        email:'tes@tes.com',
-        birthdate: '2000',
-        address:'Test'
+        name: 'ANDRE',
+        email:'bagusandrenathanael@gmail.com',
+        birthdate: '2001',
+        address:'Gambir'
     }
 ]
