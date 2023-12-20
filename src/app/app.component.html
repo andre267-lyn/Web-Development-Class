@@ -1,0 +1,35 @@
+<h1>Dosen Tetap</h1>
+<p>Nidn: {{ dosenTetap.nidn }}</p>
+<p>Nama: {{ dosenTetap.nama }}</p>
+<p>Umur: {{ dosenTetap.umur }}</p>
+<p>Alamat: {{ dosenTetap.alamat }}</p>
+<p>Gaji: {{ dosenTetap.gaji }}</p>
+
+<h1>Dosen Kontrak</h1>
+<p>ID</p>: {{ karyawanKontrak.id }}</p>
+<p>Nama: {{ karyawanKontrak.nama }}</p>
+<p>Umur: {{ karyawanKontrak.umur }}</p>
+<p>Alamat: {{ karyawanKontrak.alamat }}</p>
+<p>Gaji: {{ karyawanKontrak.gaji }}</p>
+
+<h1>Divisi</h1>
+<p>Id Divisi: {{ oracleAdministrator.Divisi }}</p>
+<p>Nama Divisi: {{ oracleAdministrator.Divisi }}</p>
+<p>Monitoring: {{ oracleAdministrato.monitoring }}</p>
+<br>
+<p>Id Divisi: {{ dba.Divisi }}</p>
+<p>Nama Divisi: {{ dba.Divisi }}</p>
+<p>Algoritma: {{ dba.Divisi ? "Iya" : "Tidak"}}</p>
+
+<h1>Kantor</h1>
+<p>Nama Kantor: {{ pusintek.nama }}</p>
+<p>Luas: {{ pusintek.luas }}</p>
+<p>Warna: {{ pusintek.warna }}</p>
+<p>Pusat Teknologi: {{ pusintek.pusatTeknologi ? "Iya" : "Tidak"}}</p>
+<br>
+<p>Nama Kantor: {{ djpb.nama }}</p>
+<p>Luas: {{ djpb.luas }}</p>
+<p>Warna: {{ djpb.warna }}</p>
+<p>Perpajakan: {{ djpb.perpajakan ? "Iya" : "Tidak"}}</p>
+
+<router-outlet></router-outlet>
