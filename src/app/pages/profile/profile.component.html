@@ -1,0 +1,34 @@
+<div>
+    <h1 class="page-title">Profile</h1>
+
+    <div *ngFor="let y of karyawan">
+        NIK: {{ y.id }} <br>
+        Name: {{ y.first_name }} <br>
+        Job: {{ y.email }} <br>
+        <hr>
+    </div>
+
+    <br>
+
+    <div *ngIf="karwayanTerpilih.id !== 0">
+        <h3> Karyawan Terpilih adalah:</h3>
+        NIK karyawan: {{ karwayanTerpilih.id }} <br>
+        Name: {{ karwayanTerpilih.first_name }} <br>
+        Job: {{ karwayanTerpilih.last_name }} <br>
+    </div>
+
+    <div *ngIf="karwayanTerpilih.id === 0">
+        <h3>Tidak ada Karyawan yang Terpilih!</h3>
+    </div>
+    
+    <button (click)="navigateToAddProfile()">Tambah Profile</button>
+    <br>
+    <br>
+    <button (click)="navigateToUpdateProfile()">Update Profile</button>
+    
+</div>
+
+<app-update *ngIf="isAddRoute" tipe="add" [karyawan]="karyawan" (selesai)="onSelesai($event)"></app-update>
+<app-update *ngIf="isUpdateRoute" tipe="update" [karyawan]="karyawan"></app-update>
+<!-- <app-add *ngIf="isAddRoute"></app-add> -->
+<div class="spacer"></div>

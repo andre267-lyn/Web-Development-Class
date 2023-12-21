@@ -1,0 +1,45 @@
+<h1 class="page-title">Update Profile</h1>
+
+<div *ngIf="data.length === 0">
+    <h3>Data Kosong</h3>
+</div>
+
+
+<br>
+<br>
+
+<form [formGroup]="updateForm" (ngSubmit)="updateData(updateForm)">
+    <div>
+        <label>
+            First Name:
+            <input formControlName="first_name" placeholder="Your name">
+        </label>
+    </div>
+    <div>
+        <label>
+            Last Name:
+            <input formControlName="last_name" placeholder="Your name">
+        </label>
+    </div>
+    <div>
+        <label>
+            Email:
+            <input formControlName="email" placeholder="Your email">
+        </label>
+    </div>
+    <div>
+        <label>
+            Avatar:
+            <input formControlName="avatar" placeholder="Link Avatar">
+        </label>
+    </div>
+    <div>
+        <label>
+            Address:
+            <input formControlName="address" placeholder="Your addresse">
+        </label>
+    </div>
+    <br>
+    <button type="submit">{{ tipe === 'update' ? 'Update' : 'Tambah'}} Data</button>
+</form>
+<div class="spacer"></div>
